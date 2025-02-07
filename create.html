@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create News</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create News</h1>
+    </header>
+    <main>
+        <form id="create-news-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category" required></select>
+
+            <div class="editor-name-container">
+                <div class="editor-name-field">
+                    <label for="editorFirstName">Editor First Name:</label>
+                    <input type="text" id="editorFirstName" name="editorFirstName" required>
+                </div>
+                <div class="editor-name-field">
+                    <label for="editorLastName">Editor Last Name:</label>
+                    <input type="text" id="editorLastName" name="editorLastName" required>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="button" onclick="window.location.href='index.html';">Cancel</button>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="js/create.js"></script>
+</body>
+</html>
